@@ -15,13 +15,19 @@ c.onclick=function(){
     g.textContent=e+f;
     d.textContent="";
     }else if(e==="" && f!==""){
-        d.textContent="Please Enter a Valid Number of minutes";
+        d.textContent="Please Enter a Valid Number of hours";
+        g.classList.remove("p2");
+        g.textContent="";
     }
     else if(f==="" && e!==""){
-        d.textContent="Please Enter a Valid Number of hours ";
+        d.textContent="Please Enter a Valid Number of minutes ";
+        g.textContent="";
+        g.classList.remove("p2");
         
     }
     else{
         d.textContent="Please Enter a Valid Number of hours and minutes";
+        g.textContent="";
+        g.classList.remove("p2");
     }
 }
